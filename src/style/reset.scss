@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #303133;
+  font-family: Helvetica, Arial, "Source Han Sans CN", "Microsoft YaHei", sans-serif;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+ul,
+dl,
+li,
+dd,
+dt {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
