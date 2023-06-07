@@ -9,6 +9,7 @@ import '@/style/index.scss';
 import i18n from './locales';
 import 'virtual:svg-icons-register';
 import svgIcon from './components/SvgIcon.vue';
+import 'nprogress/nprogress.css'; // progress bar style
 
 const app = createApp(App);
 app.component('SvgIcon', svgIcon);

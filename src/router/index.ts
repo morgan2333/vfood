@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import NProgress from 'nprogress'; // progress bar
 import HomeView from '../views/HomeView.vue';
 
 const router = createRouter({
@@ -18,6 +19,10 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
   ],
+});
+
+router.beforeEach(() => {
+  NProgress.set(2);
 });
 
 export default router;
