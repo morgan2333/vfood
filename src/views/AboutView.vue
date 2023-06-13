@@ -3,6 +3,7 @@
     <h1>This is an about page{{ $t('hello') }} <SvgIcon name="logo" size="middle"></SvgIcon></h1>
     <button @click="changeTheme">切换主题</button>
     <div class="box"></div>
+    <div class="w-32 h-32 bg-blue-500"></div>
   </div>
 </template>
 <script setup lang="ts">
