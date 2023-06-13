@@ -44,4 +44,11 @@ export default defineConfig({
       },
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import '/src/style/variables.scss';`, // 引入全局变量文件
+      },
+    },
+  },
 });
