@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue';
 import path from 'path';
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 import { viteMockServe } from 'vite-plugin-mock';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,6 +20,12 @@ export default defineConfig({
     viteMockServe({
       mockPath: 'mock',
       localEnabled: true,
+    }),
+    visualizer({
+      gzipSize: true,
+      brotliSize: true,
+      emitFile: false,
+      open: true, // 如果存在本地服务端口，将在打包后自动展示
     }),
   ],
   resolve: {
