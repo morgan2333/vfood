@@ -12,7 +12,9 @@ import { ref } from 'vue';
 import { getBrandList } from '@/api/list';
 
 const currentColor = ref<string>('');
+const obj = ref<{ a?: string; b: string }>({ a: '', b: '123' });
 function changeTheme() {
+  console.log(obj.value.a ?? 123456, 'test delete console.log');
   currentColor.value = currentColor.value === '' ? 'green' : '';
   document.documentElement.setAttribute('theme-color', currentColor.value);
 }
